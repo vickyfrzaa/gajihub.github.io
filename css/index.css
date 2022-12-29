@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+
+.nav-link{
+    /* text-transform: uppercase; */
+    margin-right: 30px;
+}
+
+.nav-link:hover {
+    color: #da3d46 !important;
+}
+
+/* hero */
+.hero-section{
+    background-image: url(../img/hero-section.jpg);
+    background-size: cover;
+    height: 990px;
+    position: relative;
+}
+
+.hero-section::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.hero-section .benner-image > img {
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+/* jumbotron */
+.jumbotron{
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron h1 {
+    text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* about - payroll*/
+.about{
+    background-color: #e0878c;
+}
+
+.manajemen{
+    padding-top: 80px;
+}
+
+.text-isi{
+    padding-top: 30px;
+}
+
+.manajemen .img-manajemen > img{
+    padding: 2rem 0;
+    width: 50rem;
+}
+
+.payroll .payroll-image{
+    padding-top: 10px;
+}
+
+/* payroll */
+.page-payroll {
+    padding: 4rem 0 ;
+}
+
+.page-payroll h2.section-heading, .page-payroll .section-heading.h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+  
+.page-payroll h3.section-subheading, .page-payroll .section-subheading.h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 4rem;
+}
+
+.payroll {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.payroll:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 4px;
+    margin-left: -1.5px;
+    content: "";
+    background-color: #e9ecef;
+}
+
+.payroll > li {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px;
+}
+
+.payroll > li:after, .payroll > li:before {
+    display: table;
+    content: " ";
+}
+
+.payroll > li:after {
+    clear: both;
+}
+
+.payroll > li .payroll-panel {
+    position: relative;
+    float: right;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.payroll > li .payroll-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.payroll > li .payroll-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.payroll > li .payroll-image {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.payroll > li .payroll-image h4, .payroll > li .payroll-image .h4 {
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 12px;
+}
+
+.payroll > li.payroll-inverted > .payroll-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.payroll > li.payroll-inverted > .payroll-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.payroll > li.payroll-inverted > .payroll-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.payroll > li:last-child {
+    margin-bottom: 0;
+}
+
+.payroll .payroll-heading h4, .payroll .payroll-heading .h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.payroll .payroll-heading h4.subheading, .payroll .payroll-heading .subheading.h4 {
+    text-transform: none;
+}
+
+.payroll .payroll-body > ul,
+.payroll .payroll-body > p {
+    margin-bottom: 0;
+}
+
+.card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 20px 15px 20px;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.payroll-image{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 20px 15px 20px;
+    cursor: pointer;
+}
+
+.payroll-image:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+/* mobile */
+.mobile-gajihub{
+    background-color: #e53e6a;
+}
+
+/* Utility */
+/* btn gratis */
+.tombol{
+    border-radius: 40px;
+    background-color: #da3d46;
+    color: white;
+}
+
+.fas{
+    margin-left: 10px;
+}
+
+.hero-section .benner-image > img {
+    padding-top: 30px;
+    z-index: 1;
+    position: relative;
+}
+
+.rounded-circle{
+    width: 50px;
+}
+
+/* .hero-section::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+
+} */
+
+/* Desktop */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px){
+    .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link{
+        /* text-transform: uppercase; */
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #da3d46;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .hero-section{
+        margin-top: -75px;
+        height: 940px;
+    }
+
+    /* .hero-section .benner-image > img {
+        padding: 15rem 0;
+        width: 50rem;
+        padding-left: 100px;
+    } */
+
+    .jumbotron{
+        margin-top: 100px;
+    }
+
+    .hero-section .benner-image > img {
+        padding: 7rem 0;
+        width: 90rem;
+    }
+
+    .manajemen{
+        padding-top: 80px;
+    }
+
+    .text-isi{
+        padding-left: 100px;
+    }
+
+    .payroll .payroll-image{
+        padding-top: 30px;
+    }
+
+    .rounded-circle{
+        width: 100px;
+    }
+
+    .payroll > li {
+        min-height: 150px;
+    }
+
+    .payroll > li .payroll-panel {
+        padding: 0 20px 20px;
+    }
+
+    .payroll > li .payroll-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+
+    .payroll > li .payroll-image h4, .payroll > li .payroll-image .h4 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 30px;
+    }
+
+    .payroll > li.payroll-inverted > .payroll-panel {
+        padding: 0 20px 20px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .payroll:before {
+        left: 50%;
+    }
+
+    .payroll > li {
+        min-height: 100px;
+        margin-bottom: 100px;
+    }
+
+    .payroll > li .payroll-panel {
+        float: left;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+    }
+
+    .payroll > li .payroll-image {
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+    }
+
+    .payroll > li .payroll-image h4, .payroll > li .payroll-image .h4 {
+        font-size: 13px;
+        line-height: 18px;
+        margin-top: 16px;
+    }
+
+    .payroll > li.payroll-inverted > .payroll-panel {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .payroll > li {
+        min-height: 170px;
+    }
+
+    .payroll > li .payroll-panel {
+        padding: 0 20px 20px 100px;
+    }
+
+    .payroll > li .payroll-image {
+        width: 170px;
+        height: 170px;
+        margin-left: -85px;
+    }
+
+    .payroll > li .payroll-image h4, .payroll > li .payroll-image .h4 {
+        margin-top: 40px;
+    }
+
+    .payroll > li.payroll-inverted > .payroll-panel {
+        padding: 0 100px 20px 20px;
+    }
+}
